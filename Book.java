@@ -44,4 +44,10 @@ class Book
         System.out.println(bookAuthor);
     }
     
+    public void printDetails (String bookAuthor, String bookTitle, int pages)
+    {
+        System.out.println("Title: " + bookTitle + ", written by: " + 
+        bookAuthor + " with " + pages + "pages");
+    }
+    
 }
