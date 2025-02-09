@@ -31,4 +31,15 @@ class Book
     {
         return author;
     }
+    
+    public void printTitle (String bookTitle)
+    {
+        System.out.println(bookTitle);
+    }
+    
+    public void printAuthor (String bookAuthor)
+    {
+        System.out.println(bookAuthor);
+    }
+    
 }
