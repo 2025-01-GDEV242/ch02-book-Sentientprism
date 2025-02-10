@@ -50,7 +50,7 @@ class Book
     {
         if (refNumber == "") {
             System.out.println("Title: " + bookTitle + ", written by: " + 
-        bookAuthor + " with " + pages + "pages. Reference number ZZZ.");
+        bookAuthor + " with " + pages + " pages. Reference number ZZZ.");
         }
         else {
             System.out.println("Title: " + bookTitle + ", written by: " +
@@ -61,10 +61,14 @@ class Book
     
     public void setRefNumber(String ref)
     {
-        refNumber = ref;
         if (refNumber.length() < 3) {
-        refNumber = "ZZZ";
+            System.out.println("Entry too short. Please enter a reference" 
+            + " number with more than two characters.");
     }
+     else
+     {
+         refNumber = ref;
+        }
     }
     
     public void getRefNumber (String refNumber)
