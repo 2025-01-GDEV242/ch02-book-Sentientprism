@@ -14,18 +14,21 @@ class Book
     private int pages;
     private String refNumber;
     private int borrowed;
+    private boolean isCourseText;
 
     /**
      * Set the author, title and page fields when this object
      * is constructed.
      */
-    public Book(String bookAuthor, String bookTitle, int pages)
+    public Book(String bookAuthor, String bookTitle, int pages,
+    boolean isCourseText)
     {
         author = bookAuthor;
         title = bookTitle;
         pages = 0;
         refNumber = "";
         borrowed = 0;
+        isCourseText = true;
     }
 
     public String getTitle (String bookTitle)
@@ -83,4 +86,10 @@ class Book
     {
         borrowed++;
     }
-}
+    
+    public void isCourseText()
+    {
+        System.out.println(isCourseText);
+        }
+    }
+
