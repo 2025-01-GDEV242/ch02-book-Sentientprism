@@ -62,6 +62,9 @@ class Book
     public void setRefNumber(String ref)
     {
         refNumber = ref;
+        if (refNumber.length() < 3) {
+        refNumber = "ZZZ";
+    }
     }
     
     public void getRefNumber (String refNumber)
