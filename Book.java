@@ -48,8 +48,15 @@ class Book
     
     public void printDetails (String bookAuthor, String bookTitle, int pages)
     {
-        System.out.println("Title: " + bookTitle + ", written by: " + 
-        bookAuthor + " with " + pages + "pages");
+        if (refNumber == "") {
+            System.out.println("Title: " + bookTitle + ", written by: " + 
+        bookAuthor + " with " + pages + "pages. Reference number ZZZ.");
+        }
+        else {
+            System.out.println("Title: " + bookTitle + ", written by: " +
+            bookAuthor + " with " + pages + " pages. Reference number " +
+        refNumber);
+    }
     }
     
     public void setRefNumber(String ref)
